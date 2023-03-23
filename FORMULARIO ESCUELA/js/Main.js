@@ -22,7 +22,8 @@ formulario.addEventListener('submit', function validarform(event){
 
 event.preventDefault();
 
-if (txt_nombre.value == '' || txt_promedio.value=='' || txt_curp.value==''|| txt_correo.value ===''|| txt_telefono.value ===''|| slc_escuela.value ===''|| sic_carreras.value=='') { notificar ("Existen campos vacios', 'msg-error");
+if (txt_nombre.value === '' || txt_promedio.value==='' || txt_curp.value===''|| txt_correo.value ===''|| txt_telefono.value ===''|| slc_escuela.value ===''|| sic_carreras.value==='') { 
+    notificar ('Existen campos vacios', 'msg-error');
 
 } else { 
     notificar('Datos Enviados Correctamente', 'msg-ok');
